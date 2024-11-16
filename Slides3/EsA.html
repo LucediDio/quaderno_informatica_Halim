@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Gestione Anagrafica Utenti</title>
+</head>
+<body>
+    <h1>Gestione Anagrafica Utenti</h1>
+    <fieldset>
+        <form action="EsA1.php" method="post">
+        <label for="nome">Nome (solo caratteri alfabetici e spazio)*:</label><br>
+        <input type="text" id="nome" name="nome" pattern="[A-Za-zÀ-ÿ\s]+" required><br><br>
+
+        <label for="cognome">Cognome (caratteri alfabetici, spazio, apostrofo)*:</label><br>
+        <input type="text" id="cognome" name="cognome" pattern="[A-Za-zÀ-ÿ\s']+" required><br><br>
+
+        <label for="data_nascita">Data di Nascita*:</label><br>
+        <input type="date" id="data_nascita" name="data_nascita" required><br><br>
+
+        <label for="codice_fiscale">Codice Fiscale (opzionale):</label><br>
+        <input type="text" id="codice_fiscale" name="codice_fiscale" maxlength="16" minlength="16"><br><br>
+
+        <label for="email">Email*:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="cellulare">Cellulare:</label><br>
+        <input type="tel" id="cellulare" name="cellulare"><br><br>
+
+        
+            <legend>Indirizzo (Obbligatorio):</legend>
+            <label for="via">Via/Piazza*:</label><br>
+            <input type="text" id="via" name="via" required><br><br>
+
+            <label for="cap">CAP*:</label><br>
+            <input type="text" id="cap" name="cap" pattern="[0-9]{5}" required><br><br>
+
+            <label for="comune">Comune*:</label><br>
+            <input type="text" id="comune" name="comune" required><br><br>
+
+            <label for="provincia">Provincia*:</label><br>
+            <input type="text" id="provincia" name="provincia" pattern="[A-Za-z]{2}" required><br><br>
+        
+
+        <label for="nickname">Nickname (deve essere diverso da nome e cognome)*:</label><br>
+        <input type="text" id="nickname" name="nickname" required><br><br>
+
+        <label for="password">Password :</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="submit" name="submit">Invia</button>
+    </fieldset>
+    </form>
+
+    <!-- Spiegazione del codice -->
+    <h2>Spiegazione del codice</h2>
+    <p>Questo file HTML crea un modulo per raccogliere l'anagrafica di un utente. Il form utilizza:</p>
+    <ul>
+        <li>Campi obbligatori come <code>nome</code>, <code>cognome</code>, <code>email</code>, e altri. Sono validati tramite gli attributi <code>pattern</code> e <code>required</code>.</li>
+        <li>La validazione lato client per garantire che i dati inseriti rispettino le regole.</li>
+        <li>Il metodo <code>POST</code> per inviare i dati a un file PHP (<code>EsA1.php</code>).</li>
+        <li>Un mix di campi di input per raccogliere diverse informazioni, inclusi campi di testo, date e password.</li>
+    </ul>
+    <H1><a href="/Slides/index.html">HOME</a> <h1></h1>
+</body>
+</html>

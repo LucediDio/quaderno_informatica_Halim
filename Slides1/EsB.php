@@ -30,11 +30,11 @@
         $browser = "Mozilla Firefox";
     } else if (strpos($userAgent, 'Safari') !== false && strpos($userAgent, 'Chrome') === false) {
         $browser = "Safari";
-    } else if (strpos($userAgent, 'Edge') !== false || strpos($userAgent, 'Edg') !== false) {
+    } else if (strpos($userAgent, 'Edge') !== false && strpos($userAgent, 'Edg') !== false) {
         $browser = "Microsoft Edge";
-    } else if (strpos($userAgent, 'Opera') !== false || strpos($userAgent, 'OPR') !== false) {
+    } else if (strpos($userAgent, 'Opera') !== false && strpos($userAgent, 'OPR') !== false) {
         $browser = "Opera";
-    } else if (strpos($userAgent, 'Trident') !== false || strpos($userAgent, 'MSIE') !== false) {
+    } else if (strpos($userAgent, 'Trident') !== false && strpos($userAgent, 'MSIE') !== false) {
         $browser = "Internet Explorer";
     }
 

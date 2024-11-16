@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+<body>
+    <body>
+        <h3> Accesso a pagina riservata</h3>
+
+        <form action="EsB1.php" method="post">
+
+        <label for="username"><b>Username</b></label>
+        <input type="text" name="nomeutente" placeholder="Inserisci il nome utente" /><br />
+        
+        <label for="password"><b>Password</b></label>
+        <input type="password" name="password" placeholder="Inserisci la password" /><br />
+
+        <input name="submit" type="submit" value="Invia" />
+        </form>
+        <!-- Sezione con spiegazione del codice -->
+        <h3>Spiegazione del Codice</h3>
+        <p>
+            Questo codice HTML e PHP serve per creare una semplice pagina web che gestisce l'accesso a una sezione riservata.
+            In pratica, la pagina contiene un form che richiede all'utente di inserire un nome utente e una password.
+            Quando l'utente invia il form, i dati vengono inviati al server, dove vengono elaborati da un codice PHP.
+        </p>
+        <p>
+            Nel form HTML, vediamo due campi di input:
+        </p>
+        <ul>
+            <li><strong>Username</strong>: un campo di testo dove l'utente deve inserire il proprio nome utente.</li>
+            <li><strong>Password</strong>: un campo di password dove l'utente deve inserire la propria password. Il testo della password è nascosto.</li>
+        </ul>
+        <p>
+            Quando l'utente preme il pulsante <strong>Invia</strong>, i dati vengono inviati al file <code>EsB1.php</code> tramite il metodo POST.
+        </p>
+    
+        <h4>Spiegazione del Codice PHP</h4>
+        <p>
+            All'interno del file <code>EsB1.php</code>, il codice PHP controlla se il nome utente e la password sono corretti. In particolare:
+        </p>
+        <ul>
+            <li>Il nome utente corretto e' <strong>admin</strong>.</li>
+            <li>La password corretta e' <strong>passwd</strong>.</li>
+        </ul>
+        <p>
+            Se i dati inseriti dall'utente non corrispondono a questi valori, viene mostrato un messaggio che dice "Nome utente o password sbagliati. Accesso negato!".
+        </p>
+        <p>
+            Se i dati sono corretti,viene mostrato un messaggio di benvenuto che include il nome utente inserito.
+        </p>
+        <p>
+            Se l'utente non inserisce dati, tramite il metodo isset controllo se le variabili siano == a null e in tal caso gli dico di riprovare.
+        </p>
+    
+        <H1><a href="/Slides/index.html">HOME</a> <h1></h1>
+    </body>
+</html>
