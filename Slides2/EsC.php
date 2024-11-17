@@ -10,12 +10,12 @@
     <h1 style="text-align: center;">Tabella dei Quadrati e dei Cubi</h1>
 
     <?php
-    // Verifica se il form è stato inviato
+ 
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
         $numero = $_POST['numero'] ?? 0;
 
         if ($numero >= 1 && $numero <= 10) {
-            // Genera la tabella dei quadrati e cubi
+           
             echo "<table border='1' cellpadding='5' cellspacing='0' style='margin: 0 auto; border-collapse: collapse;'>";
             echo "<tr><th>Numero</th><th>Quadrato</th><th>Cubo</th></tr>";
 
@@ -33,11 +33,11 @@
             mostraForm();
         }
     } else {
-        // Mostra il form se non è stato inviato
+       
         mostraForm();
     }
 
-    // Funzione per visualizzare il form
+    
     function mostraForm()
     {
         echo '

@@ -1,26 +1,41 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-
     <title>Dati Inseriti</title>
 </head>
+
 <body>
     <h1>Dati Inseriti</h1>
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
-        $nome = htmlspecialchars($_POST['nome']);
-        $cognome = htmlspecialchars($_POST['cognome']);
-        $data_nascita = htmlspecialchars($_POST['data_nascita']);
-        $codice_fiscale = htmlspecialchars($_POST['codice_fiscale']) ?: "Non specificato";
-        $email = htmlspecialchars($_POST['email']);
-        $cellulare = htmlspecialchars($_POST['cellulare']) ?: "Non specificato";
-        $via = htmlspecialchars($_POST['via']);
-        $cap = htmlspecialchars($_POST['cap']);
-        $comune = htmlspecialchars($_POST['comune']);
-        $provincia = htmlspecialchars($_POST['provincia']);
-        $nickname = htmlspecialchars($_POST['nickname']);
-        $password = htmlspecialchars($_POST['password']);
+        
+        $nome = trim(htmlspecialchars($_POST['nome']));
+        $cognome = trim(htmlspecialchars($_POST['cognome']));
+        $data_nascita = trim(htmlspecialchars($_POST['data_nascita']));
+        $codice_fiscale = trim(htmlspecialchars($_POST['codice_fiscale'])) ?: "Non specificato";
+        $email = trim(htmlspecialchars($_POST['email']));
+        $cellulare = trim(htmlspecialchars($_POST['cellulare'])) ?: "Non specificato";
+        $via = trim(htmlspecialchars($_POST['via']));
+        $cap = trim(htmlspecialchars($_POST['cap']));
+        $comune = trim(htmlspecialchars($_POST['comune']));
+        $provincia = trim(htmlspecialchars($_POST['provincia']));
+        $nickname = trim(htmlspecialchars($_POST['nickname']));
+        $password = htmlspecialchars($_POST['password']); 
 
+        
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "<p>Errore: L'email inserita non è valida.</p>";
+            exit;
+        }
+
+        
+        if ($nickname === $nome && $nickname === $cognome) {
+            echo "<p>Errore: Il nickname deve essere diverso da nome e cognome.</p>";
+            exit;
+        }
+
+        
         echo "<p><strong>Nome:</strong> $nome</p>";
         echo "<p><strong>Cognome:</strong> $cognome</p>";
         echo "<p><strong>Data di Nascita:</strong> $data_nascita</p>";
@@ -34,6 +49,7 @@
         echo "<p>Errore: Il modulo non è stato inviato correttamente.</p>";
     }
     ?>
-    <H1><a href="/Slides/index.html">HOME</a> <h1>
+    <h1><a href="/Slides/index.html">HOME</a></h1>
 </body>
+
 </html>
