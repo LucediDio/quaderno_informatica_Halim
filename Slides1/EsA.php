@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 
 <head>
     <title>Tabella Pitagorica</title>
@@ -80,6 +80,6 @@
         <li>Numeri da 1 a 10 come intestazioni di righe e colonne.</li>
         <li>Il prodotto tra il numero della riga e il numero della colonna in ogni cella.</li>
     </ul>
-    <H1><a href="/Slides/index.html">HOME</a> <h1>
+    <h1 style="text-align: center;"> <strong><a href="/Slides/index.html">HOME</a> <strong><a href="../Slides1/Esb.php">Esercizio successivo</a>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 
 
 <head>
@@ -105,7 +105,7 @@
     <p>
         Il risultato è una tabella centrata che mostra i numeri, i loro quadrati e i cubi da 1 a N (con N selezionato dall'utente).
     </p>
-    <H1><a href="/Slides/index.html">HOME</a> <h1>
+    <h1 style="text-align: center;"> <strong><a href="/Slides/index.html">HOME</a> <strong><a href="../Slides3/EsA.html">Esercizio successivo</a>
 </body>
 
 </html>

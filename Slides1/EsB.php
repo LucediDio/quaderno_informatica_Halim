@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 
 <head>
 
@@ -98,6 +98,6 @@
         <li>Un messaggio personalizzato in base all'orario, come intestazione HTML .</li>
         <li>Il nome del browser utilizzato dall'utente, sotto forma di paragrafo .</li>
     </ul>
-    <H1><a href="/Slides/index.html">HOME</a> <h1>
+    <h1 style="text-align: center;"> <strong><a href="/Slides/index.html">HOME</a> <strong><a href="../Slides1/EsC.php">Esercizio successivo</a>
 </body>
 </html>

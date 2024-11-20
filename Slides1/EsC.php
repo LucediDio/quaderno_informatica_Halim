@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 
 <head>
     <title>Schemi di Triangoli</title>
@@ -113,6 +113,6 @@
             (<code>*</code>) in ogni riga.</li>
         <li>Alla fine di ogni iterazione, <code>echo '&lt;br&gt;';</code> sposta alla riga successiva.</li>
     </ul>
-    <H1><a href="/Slides/index.html">HOME</a> <h1>
+    <h1 style="text-align: center;"> <strong><a href="/Slides/index.html">HOME</a> <strong><a href="../Slides2/EsA.html">Esercizio successivo</a>
 </body>
 </html>

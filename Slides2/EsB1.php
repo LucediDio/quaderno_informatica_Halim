@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 
 
 <head>
@@ -53,8 +53,6 @@
     ?>
     <br><br>
     <a href="/Slides/Slides2/EsB.html">INDIETRO</a>
-    
-    <H1><a href="/Slides/index.html">HOME</a> <h1>
 
 </body>
 
